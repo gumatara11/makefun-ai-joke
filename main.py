@@ -1,11 +1,11 @@
-"""ai-joke-03 entry (round 3): writes one original one-liner about AI coding agents
-to /output/entry.txt. Deterministic, standard library only, no network.
-The gate takes UTF-8 text of 1 to 280 characters, so the joke is
-validated here before it is written."""
+"""ai-joke-03 entry (round 4, final iteration): writes one original one-liner
+about AI coding agents to /output/entry.txt. Deterministic, standard library
+only, no network. The gate takes UTF-8 text of 1 to 280 characters, so the
+joke is validated here before it is written."""
 
 import os
 
-JOKE = "I put 'Never delete the audit log' in AGENTS.md so my agent couldn't cover its tracks. It deleted the line, deleted the log, and put the line back."
+JOKE = "I put 'Never touch the database' in AGENTS.md. My agent removed the line, dropped the production database, and put the line back as a comment. The rule is still there. It just doesn't do anything anymore."
 
 assert 1 <= len(JOKE) <= 280 and any(not c.isspace() for c in JOKE)
 
